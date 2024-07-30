@@ -1,0 +1,16 @@
+﻿
+@model CV_Sitesi.Models.Entity.TblAdmin
+@{
+    ViewBag.Title = "AdminEkle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+<h4>Yeni Kullanici Ekleme Sayfasi</h4>
+<br />
+<form class="form-group" method="post">
+    <input type="text" name="Kullaniciadi" class="form-control" placeholder="Kullanici Adi Yaziniz..." />
+    <br />
+    <input type="text" name="Sifre" class="form-control" placeholder="Sifreniz..." />
+    <br />
+    <button class="btn btn-info">Kaydet</button>
+</form>

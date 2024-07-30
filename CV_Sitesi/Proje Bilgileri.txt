@@ -1,0 +1,15 @@
+Projeyi Hazırlayan : Muhammet Haktan Kırmızı
+ARI BİLİŞİM / Yazılım Uzmanlığı     Bitiriş Projesi
+
+
+
+Proje iki temelden oluşan CV sitesidir.Admin Panelinde kullanıcınn arayüz üzerinden site üzerinde değişim yapabilmesi sağlanmıştır.
+
+
+
+
+
+
+Proje bilgileri
+Admin Kullanıcı Adı= Haktan, Şifre= Kirmizi
+Olusturulan Site URL= https://haktankirmizi.com.tr/        Admin Paneli erişim = https://haktankirmizi.com.tr/Admin/Index/

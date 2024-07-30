@@ -1,0 +1,31 @@
+﻿@model  CV_Sitesi.Models.Entity.TblEgitimlerim
+
+@{
+    ViewBag.Title = "EgitimDuzenle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+<h4>Egitim Guncelleme Sayfasi</h4>
+
+<form method="post">
+    <br />
+    @Html.Label("Baslik");
+    @Html.TextBoxFor(x => x.Baslik, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.Baslik, "", new { style = "color:red" })
+    <br />
+    @Html.Label("AltBaslik");
+    @Html.TextBoxFor(x => x.Altbaslik, new { @class = "form-control" })
+    <br />
+    @Html.Label("AltBaslik2");
+    @Html.TextBoxFor(x => x.Altbaslik2, new { @class = "form-control" })
+    <br />
+    @Html.Label("GNO");
+    @Html.TextBoxFor(x => x.GNO, new { @class = "form-control" })
+    <br />
+    @Html.Label("Tarih");
+    @Html.TextBoxFor(x => x.Tarih, new { @class = "form-control" })
+
+
+    <button class="btn btn-info">Guncelle</button>
+</form>
+

@@ -1,0 +1,28 @@
+﻿@using CV_Sitesi.Models.Entity
+@model List<TblAdmin>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+<h2>Admin Islemleri</h2>
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Kullanici Adi</th>
+        <th>Duzenle</th>
+        <th>Kaldir</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ID</td>
+            <td>@item.Kullaniciadi</td>
+            <td><a href="@Url.Action("AdminDuzenle", "Admin", new { id = item.ID })" class="btn btn-success">Duzenle</a></td>
+            <td><a href="@Url.Action("AdminSil", "Admin", new { id = item.ID })" class="btn btn-danger">Sil</a></td>
+        </tr>
+    }
+</table>
+
+<a href="@Url.Action("AdminEkle", "Admin")" class="btn btn-primary">Yeni Kullanici Ekle</a>

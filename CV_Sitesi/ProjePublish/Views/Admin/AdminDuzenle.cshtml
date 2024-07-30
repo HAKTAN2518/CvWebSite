@@ -1,0 +1,22 @@
+﻿@model CV_Sitesi.Models.Entity.TblAdmin
+
+@{
+    ViewBag.Title = "AdminDuzenle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h4>Sifre Guncelleme Sayfasi</h4>
+<br />
+<form method="post">
+    @Html.Label("Admin ID");
+    @Html.TextBoxFor(x => x.ID, new { @class = "form-control" })
+    <br />
+    @Html.Label("Kullanici Adi");
+    @Html.TextBoxFor(x => x.Kullaniciadi, new { @class = "form-control" })
+    <br />
+    @Html.Label("Sifre");
+    @Html.TextBoxFor(x => x.Sifre, new { @class = "form-control" })
+    <button class="btn btn-info">Guncelle</button>
+</form>
+

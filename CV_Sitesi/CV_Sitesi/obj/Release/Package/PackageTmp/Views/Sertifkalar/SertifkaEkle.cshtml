@@ -1,0 +1,23 @@
+﻿@model CV_Sitesi.Models.Entity.TblSertifkalarim
+@{
+    ViewBag.Title = "SertifkaEkle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h4>Sertifica Ekleme Sayfasi</h4>
+<br />
+<form method="post">
+    <br />
+    @Html.Label("Sertifka");
+    @Html.TextBoxFor(x => x.Aciklma, new { @class = "form-control" })
+    <br />
+    @Html.Label("Tarih");
+    @Html.TextBoxFor(x => x.Tarih, new { @class = "form-control" })
+
+
+<br />
+
+    <button class="btn btn-primary">Kaydet</button>
+</form>
+

@@ -1,0 +1,32 @@
+﻿@model CV_Sitesi.Models.Entity.TblDeneyimlerim
+
+@{
+    ViewBag.Title = "DeneyimGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h4>Deneyim Guncelleme Sayfasi</h4>
+<br />
+<form method="post">
+    @Html.Label("Deneyim ID");
+    @Html.TextBoxFor(x => x.ID, new { @class = "form-control" })
+    <br />
+    @Html.Label("Baslik");
+    @Html.TextBoxFor(x => x.Baslik, new { @class = "form-control" })
+    <br />
+    @Html.Label("Altbaslik");
+    @Html.TextBoxFor(x => x.Altbaslik, new { @class = "form-control" })
+    <br />
+    @Html.Label("Tarih");
+    @Html.TextBoxFor(x => x.Tarih, new { @class = "form-control" })
+    <br />
+    @Html.Label("Aciklama");
+    @Html.TextAreaFor(x => x.Aciklama, new { @class = "form-control" })
+
+
+
+
+    <button class="btn btn-info">Guncelle</button>
+</form>
+

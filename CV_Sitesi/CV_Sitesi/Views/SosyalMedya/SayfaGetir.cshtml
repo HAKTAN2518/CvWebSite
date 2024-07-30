@@ -1,0 +1,25 @@
+﻿
+@model CV_Sitesi.Models.Entity.TblSosyalMedya
+
+@{
+    ViewBag.Title = "Sosyal Medya Duzelt";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+<h4>S.Medya Duzenleme Sayfasi</h4>
+<br />
+<form method="post">
+    <br />
+    @Html.Label("Ad");
+    @Html.TextBoxFor(x => x.Ad, new { @class = "form-control" })
+    <br />
+    @Html.Label("Link");
+    @Html.TextBoxFor(x => x.Link, new { @class = "form-control" })
+    <br />
+    @Html.Label("Icon");
+    @Html.TextBoxFor(x => x.icon, new { @class = "form-control" })
+
+
+
+    <button class="btn btn-info">Guncelle</button>
+</form>

@@ -1,0 +1,19 @@
+﻿@using CV_Sitesi.Models.Entity
+@model List<TblSertifkalarim> 
+
+<div class="resume-section-content">
+    <h2 class="mb-5">Certifications</h2>
+    @foreach (var item in Model)
+    {
+
+
+    <ul class="fa-ul mb-0">
+
+        <li>
+            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+            @item.Aciklma
+        </li>
+    </ul>
+    }
+</div>
+
